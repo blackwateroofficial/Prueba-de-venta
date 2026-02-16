@@ -1,408 +1,202 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Autonomia Hacker</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sumytrans | Transporte y Logística</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f9;
+            color: #333;
+        }
+
+        header {
+            background: linear-gradient(to right, #003366, #0055aa);
+            color: white;
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 3em;
+        }
+
+        header p {
+            font-size: 1.2em;
+            margin-top: 10px;
+        }
+
+        nav {
+            background-color: #002244;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        section {
+            max-width: 1100px;
+            margin: auto;
+            padding: 50px 20px;
+        }
+
+        .about {
+            text-align: center;
+        }
+
+        .about h2 {
+            font-size: 2em;
+            margin-bottom: 15px;
+        }
+
+        .about p {
+            font-size: 1.1em;
+            line-height: 1.6;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .photo-box {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 0 10px rgba(0,0,0,0.15);
+            transition: transform 0.3s;
+        }
+
+        .photo-box:hover {
+            transform: scale(1.03);
+        }
+
+        .photo-box img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .photo-box p {
+            padding: 15px;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .contact {
+            background-color: #003366;
+            color: white;
+            border-radius: 12px;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .contact h2 {
+            margin-bottom: 20px;
+        }
+
+        .contact p {
+            font-size: 1.1em;
+            margin: 8px 0;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #001122;
+            color: white;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- ENCABEZADO -->
     <header>
-      <h1><a href="#Luis Diaz">Luis Diaz</a></h1>
-      <nav class="nav-bar">
-        <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="content/index.html">Autonomia Hacker</a></li>
-          <li><a href="#sobre-mi">Sobre mí</a></li>
-          <li><a href="#certificaciones">Mis certificaciones</a></li>
-          <li><a href="#roadmap">Roadmap</a></li>
-          <li><a href="content/ctfs/index.html">WriteUps</a></li>
-          <li><a href="blog/index.html">Blog</a></li>
-          <li><a href="#redes-sociales">Redes sociales</a></li>
-        </ul>
-      </nav>
+        <h1>Sumytrans</h1>
+        <p>Transporte y Logística Profesional a Nivel Nacional e Internacional</p>
     </header>
-    <!-- mtx -->
-    <canvas id="matrix"></canvas>
-    <main>
-      <section id="home">
-        <!-- image in -->
-        <div class="about-container">
-          <div class="about-text">
-            <h2>WHOAMI</h2>
-            <p>
-              ¡Saludos! Soy Luis Díaz, Consultor en Ciberseguridad Ofensiva y me
-              da mucho gusto que puedas visitar mi página. Estaré encantado de
-              ayudarte en tu camino, al igual que me ayudaron a mí.
-            </p>
-          </div>
-          <img src="img/perfil1.png" alt="Mi Foto" class="profile-picture" />
+
+    <!-- MENÚ -->
+    <nav>
+        <a href="#empresa">Empresa</a>
+        <a href="#flota">Nuestra Flota</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
+
+    <!-- SECCIÓN EMPRESA -->
+    <section id="empresa" class="about">
+        <h2>Sobre Nosotros</h2>
+        <p>
+            En <strong>Sumytrans</strong> somos una empresa dedicada al transporte de mercancías
+            y soluciones logísticas eficientes. Nuestro compromiso es ofrecer un servicio
+            seguro, puntual y adaptado a las necesidades de cada cliente.
+        </p>
+        <p>
+            Con una amplia experiencia en el sector, garantizamos calidad, confianza y
+            profesionalidad en cada trayecto.
+        </p>
+    </section>
+
+    <!-- SECCIÓN GALERÍA -->
+    <section id="flota">
+        <h2 style="text-align:center;">Nuestra Flota de Camiones</h2>
+        <p style="text-align:center;">
+            Disponemos de vehículos modernos preparados para garantizar un transporte seguro.
+        </p>
+
+        <div class="gallery">
+
+            <!-- FOTO 1 -->
+            <div class="photo-box">
+                <img src="camion1.jpg" alt="Camión Sumytrans">
+                <p>Transporte Nacional</p>
+            </div>
+
+            <!-- FOTO 2 -->
+            <div class="photo-box">
+                <img src="camion2.jpg" alt="Camión en carretera">
+                <p>Rutas Internacionales</p>
+            </div>
+
+            <!-- FOTO 3 -->
+            <div class="photo-box">
+                <img src="camion3.jpg" alt="Flota Sumytrans">
+                <p>Flota Moderna</p>
+            </div>
+
         </div>
-      </section>
-      <hr />
-      <!--divisor -->
-      <section id="sobre-mi">
-        <div class="cv-section">
-          <h1>Mis Datos de Contacto</h1>
-          <div class="cv-container">
-            <!-- Columna de la foto -->
-            <div class="cv-photo">
-              <img src="img/perfilado.png" alt="Foto de Luis Diaz" />
-            </div>
-            <!-- Columna de los datos personales -->
-            <div class="cv-details">
-              <p><strong>Nombre:</strong> Luis Diaz</p>
-              <p><strong>Correo:</strong> autonomiahacker@gmail.com</p>
-              <p><strong>Puesto:</strong> Offensive Cybersecurity Consultant</p>
-              <p><strong>País:</strong> México</p>
-              <p><strong>Edad:</strong> 35 años</p>
-              <p>
-                <strong>Otros datos:</strong> Creador de contenido,
-                Vulnerability Triager, BugHunter y Fundador de Autonomía Hacker
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-      <hr />
-     <!--divisor -->
-      <!-- Certificaciones -->
-      <section id="certificaciones">
-        <div class="certifications">
-          <h2>Mis Certificaciones</h2>
-          <div class="certification-grid">
-            <div class="certification">
-              <div class="cert-content"></div>
-              <img
-                src="img/ejpt.png"
-                alt="Certificación 1"
-                class="small-cert"
-              />
-              <p>eJPT</p>
-              <p>(Junior Penetration Tester)</p>
-            </div>
-            <div class="certification">
-              <div class="cert-content"></div>
-              <img
-                src="img/ecpptv2.png"
-                alt="Certificación 2"
-                class="large-cert"
-              />
-              <p>eCPPT</p>
-              <p>(Certified Professional Penetration Tester)</p>
-            </div>
-            <div class="certification">
-              <div class="cert-content"></div>
-              <img
-                src="img/cwes.webp"
-                alt="Certificación 3"
-                class="medium-cert"
-              />
-              <p>CWES</p>
-              <p>(HTB Certified Web Exploitation Expert)</p>
-            </div>
-            <div class="certification">
-              <div class="cert-content"></div>
-              <img
-                src="img/crta_insignia.png"
-                alt="Certificación 3"
-                class="medium-cert"
-              />
-              <p>CRTA</p>
-              <p>(CRTA Certified Red Team Analyst)</p>
-            </div>
-          </div>
-        </div>
-      </section>
-      <hr />
-      <!-- divisor -->
-      <!-- Certificaciones en progreso-->
-      <section id="roadmap">
-        <div class="certifications">
-          <h2>Progreso de Certificaciones</h2>
-        </div>
-        <!-- Certificaciones en Progreso-->
-        <div class="certifications">
-          <div class="certification-grid">
-            <!--<div class="certification">
-              <div class="cert-content"></div>
-              <img
-                src="img/isc2.png"
-                alt="Certificación 2"
-                class="medium-cert"
-              />
-              <p>ISC - CC</p>
-              <div class="progress-bar">
-                <div style="width: 0%"></div>
-                <span>0%</span>
-              </div>
-            </div>
-            <div class="certification">
-                <div class="cert-content"></div>
-                <img src="img/cptshtb.webp" alt="Certificación 2" class="medium-cert">
-                <p>CPTS</p>
-                <div class="progress-bar">
-                    <div style="width: 0%;"></div>
-                    <span>0%</span>
-                </div>
-            </div>
-            <div class="certification">
-              <div class="cert-content"></div>
-              <img
-                src="img/aws_cloud.png"
-                alt="Certificación 2"
-                class="medium-cert"
-              />
-              <p>AWS CLOUD</p>
-              <div class="progress-bar">
-                <div style="width: 0%"></div>
-                <span>0%</span>
-              </div>
-            </div>-->
-            <div class="certification">
-              <div class="cert-content"></div>
-              <img
-                src="img/crtp.png"
-                alt="Certificación 2"
-                class="medium-cert"
-              />
-              <p>CRTP</p>
-              <div class="progress-bar">
-                <div style="width: 0%"></div>
-                <span>0%</span>
-              </div>
-            </div>
-            <div class="certification">
-              <div class="cert-content"></div>
-              <img
-                src="img/oscp.png"
-                alt="Certificación 2"
-                class="medium-cert"
-              />
-              <p>OSCP</p>
-              <div class="progress-bar">
-                <div style="width: 0%"></div>
-                <span>0%</span>
-              </div>
-            </div>
-            <div class="certification">
-              <div class="cert-content"></div>
-              <img
-                src="img/cpts.png"
-                alt="Certificación 2"
-                class="medium-cert"
-              />
-              <p>CPTS</p>
-              <div class="progress-bar">
-                <div style="width: 0%"></div>
-                <span>0%</span>
-              </div>
-            </div>
-            <!--<div class="certification">
-                <div class="cert-content"></div>
-                <img src="img/crte.png" alt="Certificación 2" class="medium-cert">
-                <p>CRTE</p>
-                <div class="progress-bar">
-                    <div style="width: 0%;"></div>
-                    <span>0%</span>
-                </div>
-            </div>
-            <div class="certification">
-                <div class="cert-content"></div>
-                <img src="img/crtl.png" alt="Certificación 2" class="medium-cert">
-                <p>CRTL</p>
-                <div class="progress-bar">
-                    <div style="width: 0%;"></div>
-                    <span>0%</span>
-                </div>
-            </div>
-            <div class="certification">
-                <div class="cert-content"></div>
-                <img src="img/oswp.png" alt="Certificación 2" class="medium-cert">
-                <p>OSWP</p>
-                <div class="progress-bar">
-                    <div style="width: 0%;"></div>
-                    <span>0%</span>
-                </div>
-            </div>-->
-          </div>
-        </div>
-        <!-- div-->
-        <div class="certifications">
-          <h2>Progreso ProLabs HTB Certificaciones</h2>
-          <div class="certification-grid">
-            <div class="certification">
-              <div class="cert-content"></div>
-              <img
-                src="img/dante.png"
-                alt="Certificación 2"
-                class="medium-cert"
-              />
-              <p>DANTE</p>
-              <div class="progress-bar">
-                <div style="width: 0%"></div>
-                <span>0%</span>
-              </div>
-            </div>
-            <div class="certification">
-              <div class="cert-content"></div>
-              <img
-                src="img/Zephyr-.png"
-                alt="Certificación 2"
-                class="medium-cert"
-              />
-              <p>ZEPHYR</p>
-              <div class="progress-bar">
-                <div style="width: 0%"></div>
-                <span>0%</span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- div-->
-        <!-- Certificaciones en Progreso-->
-        <div class="certifications">
-          <div class="certification-grid">
-            <!--<div class="certification">
-                <div class="cert-content"></div>
-                <img src="img/cape.png" alt="Certificación 2" class="medium-cert">
-                <p>CAPE</p>
-                <div class="progress-bar">
-                    <div style="width: 0%;"></div>
-                    <span>0%</span>
-                </div>
-            </div>
-            <div class="certification">
-                <div class="cert-content"></div>
-                <img src="img/ewptx.png" alt="Certificación 2" class="medium-cert">
-                <p>eWPTX</p>
-                <div class="progress-bar">
-                    <div style="width: 0%;"></div>
-                    <span>0%</span>
-                </div>
-            </div>
-            <div class="certification">
-                <div class="cert-content"></div>
-                <img src="img/emapt.png" alt="Certificación 2" class="medium-cert">
-                <p>eMAPT</p>
-                <div class="progress-bar">
-                    <div style="width: 0%;"></div>
-                    <span>0%</span>
-                </div>
-            </div>-->
-          </div>
-        </div>
-      </section>
-      <!--divisor -->
-      <section id="redes-sociales">
-        <div class="social-media">
-          <head>
-            <meta charset="UTF-8" />
-            <meta
-              name="viewport"
-              content="width=device-width, initial-scale=1.0"
-            />
-            <title>Mi Calendario</title>
-            <link rel="stylesheet" href="style.css" />
-          </head>
-          <h1>Redes Sociales</h1>
-          <main>
-          </main>
-          <div class="social-icons">
-            <a
-              href="https://www.linkedin.com/in/luis-d-56419a1b1"
-              target="_blank"
-            >
-              <img src="img/in.webp" alt="In" />
-            </a>
-            <a href="https://www.twitch.tv/raptoratack" target="_blank">
-              <img src="img/Twitch.webp" alt="Twitch" />
-            </a>
-            <a href="https://github.com/Raptoratack" target="_blank">
-              <img src="img/github.png" alt="GitHub" />
-            </a>
-            <a
-              href="https://www.facebook.com/people/El-Hacker-Novato/61557740345767/"
-              target="_blank"
-            >
-              <img src="img/facebook.png" alt="Facebook" />
-            </a>
-            <a
-              href="https://youtube.com/@aprendiendohacking?si=Ajc6oZUj1OTYjJ3Q"
-              target="_blank"
-            >
-              <img src="img/youtube.png" alt="Youtube" />
-            </a>
-            <a
-              href="https://youtube.com/@autonomiahacker?si=9KGjn4QspQ3y6kl1"
-              target="_blank"
-            >
-              <img src="img/youtube.png" alt="Youtube" />
-            </a>
-            <a href="https://x.com/R4ptor01" target="_blank">
-              <img src="img/x.webp" alt="x" />
-            </a>
-            <a
-              href="https://www.tiktok.com/@autonomia_hacker?is_from_webapp=1&sender_device=pc"
-              target="_blank"
-            >
-              <img src="img/tiktok.png" alt="tiktok" />
-            </a>
-            <a href="https://discord.gg/c7f5kB6t5b" target="_blank">
-              <img src="img/discord.webp" alt="discord" />
-            </a>
-            <a
-              href="https://www.instagram.com/el_h4cker_novato/"
-              target="_blank"
-            >
-              <img src="img/insta.png" alt="instagram" />
-            </a>
-          </div>
-        </div>
-      </section>
-    </main>
+    </section>
+
+    <!-- SECCIÓN CONTACTO -->
+    <section id="contacto" class="contact">
+        <h2>Contacto</h2>
+        <p><strong>📞 Teléfono:</strong> +34 600 000 000</p>
+        <p><strong>📧 Email:</strong> contacto@sumytrans.com</p>
+        <p><strong>📍 Dirección:</strong> Calle Ejemplo, 123 - España</p>
+        <p><strong>🕒 Horario:</strong> Lunes a Viernes - 08:00 a 18:00</p>
+    </section>
+
+    <!-- PIE -->
     <footer>
-      <p>&copy; 2025 Luis Diaz. Todos los derechos reservados.</p>
+        © 2026 Sumytrans - Transporte y Logística | Todos los derechos reservados
     </footer>
-  </body>
+
+</body>
 </html>
-
-<!-- JavaScript "Matrix" -->
-<script>
-  const canvas = document.getElementById("matrix");
-  const ctx = canvas.getContext("2d");
-
-  // Ajustar el tamaño del canvas
-  canvas.width = window.innerWidth;
-  canvas.height = window.innerHeight;
-
-  // Caracteres estilo "hacking"
-  const letters = "01";
-  const fontSize = 16;
-  const columns = canvas.width / fontSize;
-
-  // Arreglo para rastrear las posiciones de las columnas
-  const drops = Array(Math.floor(columns)).fill(1);
-
-  function draw() {
-    ctx.fillStyle = "rgba(0, 0, 0, 0.05)"; // Fondo negro con transparencia
-    ctx.fillRect(0, 0, canvas.width, canvas.height);
-
-    ctx.fillStyle = "#00ff00"; // Verde brillante
-    ctx.font = `${fontSize}px Courier`;
-
-    drops.forEach((y, x) => {
-      const text = letters[Math.floor(Math.random() * letters.length)];
-      ctx.fillText(text, x * fontSize, y * fontSize);
-
-      // Reiniciar la posición de la columna
-      if (y * fontSize > canvas.height && Math.random() > 0.975) {
-        drops[x] = 0;
-      }
-
-      drops[x]++;
-    });
-  }
-
-  setInterval(draw, 50);
-</script>
