@@ -1,202 +1,130 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sumytrans | Transporte y Logística</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sumytrans | Transporte y Logística</title>
 
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background-color: #f4f6f9;
-            color: #333;
-        }
-
-        header {
-            background: linear-gradient(to right, #003366, #0055aa);
-            color: white;
-            padding: 50px 20px;
-            text-align: center;
-        }
-
-        header h1 {
-            margin: 0;
-            font-size: 3em;
-        }
-
-        header p {
-            font-size: 1.2em;
-            margin-top: 10px;
-        }
-
-        nav {
-            background-color: #002244;
-            padding: 15px;
-            text-align: center;
-        }
-
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin: 0 15px;
-            font-weight: bold;
-        }
-
-        nav a:hover {
-            text-decoration: underline;
-        }
-
-        section {
-            max-width: 1100px;
-            margin: auto;
-            padding: 50px 20px;
-        }
-
-        .about {
-            text-align: center;
-        }
-
-        .about h2 {
-            font-size: 2em;
-            margin-bottom: 15px;
-        }
-
-        .about p {
-            font-size: 1.1em;
-            line-height: 1.6;
-        }
-
-        .gallery {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 20px;
-            margin-top: 30px;
-        }
-
-        .photo-box {
-            background: white;
-            border-radius: 12px;
-            overflow: hidden;
-            box-shadow: 0 0 10px rgba(0,0,0,0.15);
-            transition: transform 0.3s;
-        }
-
-        .photo-box:hover {
-            transform: scale(1.03);
-        }
-
-        .photo-box img {
-            width: 100%;
-            height: 200px;
-            object-fit: cover;
-        }
-
-        .photo-box p {
-            padding: 15px;
-            font-weight: bold;
-            text-align: center;
-        }
-
-        .contact {
-            background-color: #003366;
-            color: white;
-            border-radius: 12px;
-            padding: 40px 20px;
-            text-align: center;
-        }
-
-        .contact h2 {
-            margin-bottom: 20px;
-        }
-
-        .contact p {
-            font-size: 1.1em;
-            margin: 8px 0;
-        }
-
-        footer {
-            text-align: center;
-            padding: 20px;
-            background-color: #001122;
-            color: white;
-            font-size: 0.9em;
-        }
-    </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <!-- ENCABEZADO -->
-    <header>
-        <h1>Sumytrans</h1>
-        <p>Transporte y Logística Profesional a Nivel Nacional e Internacional</p>
-    </header>
+  <!-- HEADER -->
+  <header class="hero">
+    <div class="hero-content">
+      <h1>Sumytrans</h1>
+      <p>Transporte moderno, seguro y eficiente a nivel nacional e internacional</p>
+      <a href="#contacto" class="btn">Solicitar Presupuesto</a>
+    </div>
+  </header>
 
-    <!-- MENÚ -->
-    <nav>
-        <a href="#empresa">Empresa</a>
-        <a href="#flota">Nuestra Flota</a>
-        <a href="#contacto">Contacto</a>
-    </nav>
 
-    <!-- SECCIÓN EMPRESA -->
-    <section id="empresa" class="about">
-        <h2>Sobre Nosotros</h2>
-        <p>
-            En <strong>Sumytrans</strong> somos una empresa dedicada al transporte de mercancías
-            y soluciones logísticas eficientes. Nuestro compromiso es ofrecer un servicio
-            seguro, puntual y adaptado a las necesidades de cada cliente.
-        </p>
-        <p>
-            Con una amplia experiencia en el sector, garantizamos calidad, confianza y
-            profesionalidad en cada trayecto.
-        </p>
-    </section>
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <a href="#empresa">Empresa</a>
 
-    <!-- SECCIÓN GALERÍA -->
-    <section id="flota">
-        <h2 style="text-align:center;">Nuestra Flota de Camiones</h2>
-        <p style="text-align:center;">
-            Disponemos de vehículos modernos preparados para garantizar un transporte seguro.
-        </p>
+    <!-- MENÚ DESPLEGABLE -->
+    <div class="dropdown">
+      <button class="dropbtn">Servicios ▼</button>
+      <div class="dropdown-content">
+        <a href="#nacional">Rutas Nacionales</a>
+        <a href="#internacional">Rutas Internacionales</a>
+        <a href="#logistica">Logística Completa</a>
+      </div>
+    </div>
 
-        <div class="gallery">
+    <a href="#flota">Flota</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
 
-            <!-- FOTO 1 -->
-            <div class="photo-box">
-                <img src="camion1.jpg" alt="Camión Sumytrans">
-                <p>Transporte Nacional</p>
-            </div>
 
-            <!-- FOTO 2 -->
-            <div class="photo-box">
-                <img src="camion2.jpg" alt="Camión en carretera">
-                <p>Rutas Internacionales</p>
-            </div>
+  <!-- SOBRE NOSOTROS -->
+  <section id="empresa" class="section">
+    <h2>Sobre Nosotros</h2>
+    <p>
+      En <strong>Sumytrans</strong> ofrecemos soluciones profesionales de transporte de mercancías,
+      con una flota moderna y un equipo altamente cualificado.
+    </p>
+  </section>
 
-            <!-- FOTO 3 -->
-            <div class="photo-box">
-                <img src="camion3.jpg" alt="Flota Sumytrans">
-                <p>Flota Moderna</p>
-            </div>
 
+  <!-- SERVICIOS DESPLEGABLES -->
+  <section class="section services">
+    <h2>Nuestros Servicios</h2>
+
+    <div class="accordion">
+
+      <div class="accordion-item" id="nacional">
+        <button class="accordion-title">🚛 Rutas Nacionales</button>
+        <div class="accordion-content">
+          Transporte rápido y seguro por todo el territorio nacional.
         </div>
-    </section>
+      </div>
 
-    <!-- SECCIÓN CONTACTO -->
-    <section id="contacto" class="contact">
-        <h2>Contacto</h2>
-        <p><strong>📞 Teléfono:</strong> +34 600 000 000</p>
-        <p><strong>📧 Email:</strong> contacto@sumytrans.com</p>
-        <p><strong>📍 Dirección:</strong> Calle Ejemplo, 123 - España</p>
-        <p><strong>🕒 Horario:</strong> Lunes a Viernes - 08:00 a 18:00</p>
-    </section>
+      <div class="accordion-item" id="internacional">
+        <button class="accordion-title">🌍 Rutas Internacionales</button>
+        <div class="accordion-content">
+          Conectamos España con Europa mediante rutas eficientes y seguras.
+        </div>
+      </div>
 
-    <!-- PIE -->
-    <footer>
-        © 2026 Sumytrans - Transporte y Logística | Todos los derechos reservados
-    </footer>
+      <div class="accordion-item" id="logistica">
+        <button class="accordion-title">📦 Logística Completa</button>
+        <div class="accordion-content">
+          Gestión integral de mercancías, seguimiento y distribución personalizada.
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- GALERÍA -->
+  <section id="flota" class="section">
+    <h2>Nuestra Flota</h2>
+    <p>Vehículos modernos preparados para cualquier desafío logístico.</p>
+
+    <div class="gallery">
+      <div class="card">
+        <img src="camion1.jpg" alt="">
+        <h3>Transporte Nacional</h3>
+      </div>
+
+      <div class="card">
+        <img src="camion2.jpg" alt="">
+        <h3>Rutas Europeas</h3>
+      </div>
+
+      <div class="card">
+        <img src="camion3.jpg" alt="">
+        <h3>Flota Moderna</h3>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- CONTACTO -->
+  <section id="contacto" class="contact-section">
+    <h2>Contacto</h2>
+    <p>📞 +34 600 000 000</p>
+    <p>📧 contacto@sumytrans.com</p>
+    <p>📍 Calle Ejemplo, 123 - España</p>
+
+    <a class="btn whatsapp" href="https://wa.me/34600000000" target="_blank">
+      💬 Contactar por WhatsApp
+    </a>
+  </section>
+
+
+  <!-- FOOTER -->
+  <footer>
+    © 2026 Sumytrans | Transporte & Logística Profesional
+  </footer>
+
+
+  <!-- JAVASCRIPT -->
+  <script src="script.js"></script>
 
 </body>
 </html>
